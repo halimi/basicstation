@@ -47,7 +47,8 @@ pip install -r requirements.txt
 
 The simulation example is controlled via a makefile with multiple targets:
 
-* `make station`: Build the `testsim` station variant which provides a Unix domain socket adapter to the lgw API
-* `make sim`: Run the simulation in a single process. Log output of all components is interleaved in one terminal
+* `make station`: Build the `testsim` station variant which provides a Unix domain socket adapter to the lgw API.
+* `make sim`: Run the simulation in a single process. Log output of all components is interleaved in one terminal.
 * `make tmux`: Run the simulation in multiple processes inside different panes of a tmux split window.
-* `make clean`: Clean local directory of temporary files
+* `make stationsim`: Run the basic station simulator. It can connect to an external LNS.
+* `make clean`: Clean local directory of temporary files.
